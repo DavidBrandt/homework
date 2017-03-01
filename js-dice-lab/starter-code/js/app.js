@@ -18,20 +18,21 @@ the starter code folder to get started.
 
 */
 
+// declare click action
 document.getElementById('roll-dice').onclick = diceRoll;
-
+// declare function
 function diceRoll() {
-
+// create variable to randomly select number for first die
   var random1 = Math.floor((Math.random() * 6) + 1);
-
+// create variable to randomly select number for second die
   var random2 = Math.floor((Math.random() * 6) + 1);
-
+// create variable to match CSS class for die image
   var firstDie = 'dice-' + random1;
-
+// repeat
   var secondDie = 'dice-' + random2;
-
+// rename class for first die by ID
   document.getElementById("first-die").className = firstDie;
-
+// rename class for second die by ID
   document.getElementById("second-die").className = secondDie;
 
 }
